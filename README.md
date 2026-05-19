@@ -85,6 +85,41 @@ EDA adalah tahap krusial di mana Anda berperan sebagai **detektif data**. Anda m
 ### Langkah Praktis EDA:
 * **Viewing the Data:** Menggunakan fungsi seperti `head()`, `tail()`, `shape`, dan `info()` untuk melihat kolom dan tipe data.
 * **Summary Statistics:** Menganalisis *mean, median, mode, std, min,* dan *max* untuk memahami persebaran data.
+* **Value Counts:** Menghitung jumlah nilai unik dalam sebuah kolom. Sangat berguna untuk menganalisis data kategorikal.
+* **Missing Value Analysis:** Mendeteksi celah atau data yang hilang *(gap)*. Di bagian mana celah tersebut, dan berapa persentase data yang kosong?
+* **Visualizations:** Menggunakan grafik untuk memvisualisasikan data:
+
+    * **Histograms:** Melihat distribusi nilai.
+    * **Boxplots:** Mendeteksi *outliers* (pencilan) dan sebaran data.
+    * **Bar plots:** Membandingkan antar kategori..
+    * **Correlation heatmaps:** Melihat hubungan/korelasi linear antar fitur numerik.
+    * **Scatter plots:** Memahami hubungan antara dua variabel (bivariat).
+
+* **Target Variable Exploration:** Mempelajari bagaimana target output (misal: kolom [`charges`] pada dataset Anda) memiliki hubungan dengan variabel lainnya.
+
+---
+
+## 💡 Mengapa EDA Sangat Penting?
+
+* Anda **tidak bisa membersihkan** atau memproses data yang tidak Anda pahami.
+* Membantu mengidentifikasi **kesalahan, bias, atau keterbatasan** dalam data.
+* Menjadi panduan arah untuk proses *Data Cleaning* dan *Feature Engineering.*
+* Memberikan "cerita" atau gambaran umum kepada audiens atau *stakeholders* tentang apa yang sebenarnya disampaikan oleh data.
+
+---
+
+## 🧹 Data Cleaning (Pembersihan Data)
+
+### 1. Menangani Missing Values (Data Kosong)
+
+Langkah pertama adalah mengecek kolom mana saja yang memiliki nilai yang hilang (nulls / NaN).
+
+**Strategi Penanganan:**
+* **Drop (Hapus):** Menghapus baris atau kolom yang kosong (hanya disarankan jika jumlah yang hilang sangat sedikit).
+* **Impute (Isi Nilai):**
+    * *Mean / Median:* Digunakan untuk mengisi data numerik.
+    * *Mode (Modus):* Digunakan untuk mengisi data kategorikal.
+    * *Advanced:* Menggunakan *Linear Regression, K-Nearest Neighbors (KNN),* atau *Interpolation* (untuk pembelajaran tingkat lanjut).
 
 ---
 > **Kesimpulan:** Mempelajari ML berarti Anda sedang mempelajari "bahasa masa depan". AI adalah gambaran besarnya, ML adalah otaknya, dan Deep Learning adalah kekuatan supernya!
